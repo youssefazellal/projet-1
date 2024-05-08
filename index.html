@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: { inter: ["Poppins", "sans-serif"] },
+              colors: {
+                Blue: "#4361EE4D",
+                Move: "#3A0CA3",
+                Estate: "#4361EE",
+                Grey: "#F5F8FA",
+              },
+            },
+          },
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        .scroll-container {
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+    </style>
+    <title>Responsive Navbar</title>
+</head>
+<body>
+
+<nav class="py-4">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between">
+            <div class="hidden sm:flex items-center space-x-4">
+                <a href="#" class="px-3 py-2 font-medium rounded-md bg-Blue">Home</a>
+                <a href="#" class="px-3 py-2 font-medium rounded-md">About</a>
+                <a href="#" class="px-3 py-2 font-medium rounded-md">Listings</a>
+                <a href="#" class="px-3 py-2 font-medium rounded-md">Services</a>
+                <a href="#" class="px-3 py-2 font-medium rounded-md">Blogs</a>
+            </div>
+
+            <div class="flex justify-start sm:justify-center">
+                <a href="#" class="flex items-center">
+                    <img src="https://i.postimg.cc/Y9dWMP9h/Group-1.png" alt="Logo" class="w-[124px] h-[50px]">
+                </a>
+            </div>
+
+            <div class="hidden sm:flex items-center space-x-4">
+                <div class="flex items-center">
+                    <img src="https://i.postimg.cc/Y9Cvnx3k/icon-user-circle-alt.png" alt="Image 1" class="w-[18px] h-[18px]">
+                    <p class="ml-2 font-medium">Login/Register</p>
+                </div>
+
+                <div class="flex items-center bg-Move rounded-md px-3 py-2">
+                    <img src="https://i.postimg.cc/W3YhQJWZ/reshot-icon-house-XJ53-QBRVTC-1.png" alt="Image 2" class="w-[18px] h-[18px]">
+                    <p class="text-white font-medium ml-2">Add Listing</p>
+                </div>
+            </div>
+
+            <div class="sm:hidden flex items-center">
+                <img src="https://example.com/your-image.jpg" alt="Image" class="w-[50px] h-[50px]">
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container mx-auto flex justify-center py-8">
+    <div class="flex flex-col md:flex-row md:items-center md:space-x-8">
+        <div class="md:w-1/2">
+            <h3 class="text-lg md:text-xl text-Estate font-medium mb-2">REAL ESTATE</h3>
+            <h2 class="text-5xl md:text-6xl font-semibold mb-2">Find a perfect<br> home you love..!</h2>
+            <p class="text-gray-600 font-normal mb-4">Etiam eget elementum elit. Aenean dignissim dapibus vestibulum.<br> Integer a dolor eu sapien sodales vulputate ac in purus.</p>
+            <div class="max-w-[580px]">
+                <img src="https://i.postimg.cc/5yTR41D4/Group-6.png" alt="Image 1" class="w-full">
+            </div>
+        </div>
+
+        <div class="md:w-1/2">
+            <div class="flex flex-col">
+                <div class="flex items-center">
+                    <h3 class="text-2xl md:text-3xl font-medium mb-2">For Sale</h3>
+                    <h3 class="text-2xl md:text-3xl font-medium mb-2 md:pl-16">For Rent</h3>
+                </div>
+                <div class="flex flex-col space-y-4 mb-4">
+                    <input type="text" placeholder="New York, San Francisco, etc" class="px-4 py-2 border rounded-md">
+                    <input type="text" placeholder="Select Property Type" class="px-4 py-2 border rounded-md">
+                    <input type="text" placeholder="Select Rooms" class="px-4 py-2 border rounded-md">
+                </div>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="flex items-center mb-2 md:mb-0">
+                        <img src="https://i.postimg.cc/gjCg9s6r/icon-setting-5.png" alt="Image 1" class="w-[14px] h-[14px]">
+                        <p class="ml-2 font-normal">Advance Search</p>
+                    </div>
+                    <button class="px-16 py-2 md:ml-auto bg-Move text-white rounded-md">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-gray-200 flex flex-col items-center py-8">
+    <h3 class="text-xl md:text-2xl font-medium mb-2">OUR SERVICES</h3>
+    <h1 class="text-3xl md:text-4xl font-semibold mb-4">Donec porttitor euismod dignissim</h1>
+    <div class="flex">
+        <img src="https://i.postimg.cc/0N28L0v8/Group-47.png" alt="">
+        <img src="https://i.postimg.cc/FHxrWn2W/Group-51.png" alt="">
+        <img src="https://i.postimg.cc/hGySgQ4V/Group-52.png" alt="">
+    </div>
+</div>
+
+<div class="container mx-auto mb-8">
+    <div class="flex justify-between px-16">
+        <div>
+            <h3 class="text-xl md:text-2xl text-Move font-medium mb-2">CHECKOUT OUR NEW</h3>
+            <h1 class="text-6xl md:text-4xl font-semibold mb-4">Latest Listed Properties</h1>
+            <p class="text-gray-600 font-normal">Donec porttitor euismod dignissim. Nullam a lacinia ipsum,<br> nec dignissim purus. </p>
+        </div>
+        <div class="flex">
+            <button class="bg-Move text-white rounded-md w-[80px] h-[49px]">All</button>
+            <button class="bg-Move text-white rounded-md w-[80px] h-[49px] ml-3">Sell</button>
+            <button class="bg-Move text-white rounded-md w-[80px] h-[49px] ml-3">Rent</button>
+        </div>
+    </div>
+    <img src="https://i.postimg.cc/PJBsJ108/Frame-44.png" class="float-right mt-16">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
